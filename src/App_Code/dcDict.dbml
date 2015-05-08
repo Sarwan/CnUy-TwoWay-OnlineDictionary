@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DictUyCn" Class="dcDictDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=OFFICE-PC\SQLEXPRESS;Initial Catalog=DictUyCn;User ID=DbUser" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DictUyCnConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TCnUy" Member="TCnUys">
+    <Type Name="TCnUy">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="WordCn" Type="System.String" DbType="NChar(255)" CanBeNull="true" />
+      <Column Name="WordPinyin" Type="System.String" DbType="NChar(255)" CanBeNull="true" />
+      <Column Name="WordUy" Type="System.String" DbType="NChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TUyCn" Member="TUyCns">
+    <Type Name="TUyCn">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="WordUy" Type="System.String" DbType="NChar(255)" CanBeNull="true" />
+      <Column Name="WordCn" Type="System.String" DbType="NChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
